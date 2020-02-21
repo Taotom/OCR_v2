@@ -193,5 +193,5 @@ void matrix_print(struct matrix m)
         printf("|\n");
     }
 
-    printf("\n\n\n");
+    printf("\n");
 }

@@ -6,6 +6,7 @@
 
 #include "function.h"
 #include <err.h>
+#include <stdio.h>
 
 
 
@@ -35,7 +36,7 @@ struct matrix softmax(struct matrix m)
 
     for (int k = 0 ; k < m_soft.width ; k++)
     {
-        denum += exp(m.table[k])
+        denum += exp(m.table[k]);
     }
 
     for (int k = 0 ; k < m_soft.width ; k++)

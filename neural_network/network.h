@@ -18,5 +18,6 @@ struct network
 
 struct network network_create(int layer, int *neuron);
 void network_free(struct network n);
+void network_print(struct network n);
 
 #endif
