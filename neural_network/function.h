@@ -10,8 +10,8 @@
 #include <math.h>
 #include "../lib/matrix.h"
 
-double sigmoid(double x);
-double sigmoid_derivative(double x);
 struct matrix softmax(struct matrix m);
+double relu(double x);
+double relu_derivative(double x);
 
 #endif

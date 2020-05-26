@@ -10,19 +10,6 @@
 
 
 
-// Sigmoid function
-double sigmoid(double x)
-{
-    return exp(x)/(exp(x)+1);
-}
-
-// Sigmoid derivative function
-double sigmoid_derivative(double x)
-{
-    double s = sigmoid(x);
-    return s/(1-s);
-}
-
 // Softmax function
 struct matrix softmax(struct matrix m)
 {
@@ -45,4 +32,14 @@ struct matrix softmax(struct matrix m)
     }
 
     return m_soft;
+}
+
+double relu(double x)
+{
+    return (x < 0) ? 0 : x;
+}
+
+double relu_derivative(double x)
+{
+    return (x <= 0) ? 0 : 1;
 }
